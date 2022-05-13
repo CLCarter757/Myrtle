@@ -1,0 +1,104 @@
+#title {
+  font-family: 'Harry Potter', sans-serif;
+  text-align: center;
+  position: relative;
+  color: white;  
+}
+
+h1 {
+  font-size: 75px;
+  margin: 0px;
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  /* background-color: ; */
+}
+
+.filled-box {
+  border: 2px solid black;
+  background-color: grey;
+}
+
+.letter-row {
+  display: flex;
+  position: relative;
+}
+
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#keyboard-cont div {
+  display: flex;
+  position: relative;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  font-family: "Crimson Text", Georgia;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 2px;
+  cursor: url('./assets/Deathly_Hallows.png'), auto;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-color: black;
+  background-color: #0e1a40;
+}
+
+.game {
+  /* position: relative; */
+  height: 100vh;
+  width: 100%;
+  font-family: "Crimson Text", Georgia;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game::before {
+  content: "";
+  background-image: url('./assets/myrtle-bathroom-bright.jpeg');
+  background-size: cover;
+  background-position: absolute;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  /* opacity: 0.9; */
+}
+
+body {
+  cursor: url('./assets/Deathly_Hallows.png'), auto;
+  overflow: hidden;
+}
